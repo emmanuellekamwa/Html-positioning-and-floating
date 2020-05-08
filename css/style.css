@@ -1,0 +1,271 @@
+/* Reset default styling */
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+/* Utility classes */
+
+.clr {
+  clear: both;
+}
+
+.main-container {
+  max-width: 960px;
+  margin:auto;
+  padding-bottom: 50px;
+}
+
+/* Header Section */
+
+.header .navbar {
+  display: flex;
+  height:50px;
+  border : 1px solid #E2E2E2;
+}
+
+.navbar .left-icons{
+  flex: 1;
+}
+
+.left-icons .header-icon {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 7px 5px;
+  color: black;
+}
+
+.left-icons .header-icon:hover {
+  background-color: #F7F7F7;
+}
+
+.left-icons .header-link {
+  text-decoration: none;
+  color: black;
+  font-size: 14.25px;
+  font-weight: 700;
+  padding: 0px 10px;
+}
+
+.navbar .center-logo{
+  text-align: center;
+  padding-top: 10px;
+  flex: 2;
+}
+
+.center-logo img {
+  width: 15em;
+}
+
+.navbar .right-buttons{
+  text-align: right;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.right-buttons .header-btn {
+  text-transform: uppercase;
+  color: white;
+  font-size: 11px;
+  background-color: #567b95;
+  padding: 10px 15px;
+  margin-top: 5px;
+  border: none;
+  margin-right: 3px;
+}
+
+.right-buttons .header-btn:hover {
+  background-color: #326891;
+}
+
+/* .hero-section .hero-container {
+  max-width: 960px;
+  margin:auto;
+  padding-bottom: 50px; */
+
+.hero-section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  max-width: 700px;
+  padding: 45px 0px 20px 160px;
+}
+
+.hero-section figure img {
+  width:100%;
+}
+
+.hero-section figure figcaption{
+  font-size: 15px;
+  color: #666;
+  max-width: 750px;
+}
+
+/* Article Section */
+
+.main-article .article-container {
+  max-width: 650px;
+  margin: auto;    
+}
+
+.main-article .article-container .author-info .author-name-date {
+  width: 50%;
+  float:left;
+}
+
+.main-article .article-container .author-info .author-name-date h2 {
+  color: #333;
+  font-size: 15px;
+}
+
+.main-article .article-container .author-info .author-name-date h2 a{
+  color: #333;
+}
+
+.main-article .article-container .author-info .author-name-date span {
+  display: inline-block;
+  font-size: 13px;
+  padding: 25px 0px;
+}
+
+.main-article .article-container .author-info .social-media-icons {
+  width: 50%;
+  float: right;
+}
+
+.main-article .article-container .author-info .social-media-icons {
+  display: flex;
+  padding-top: 30px;
+  justify-content: flex-end;
+}
+
+.main-article .article-container .author-info .social-media-icons .social-icon {
+  font-size: 17px;
+  margin-right: 15px;
+  padding :6px;
+  color: black;
+  border: solid 1px #F7F7F7;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+}
+
+.main-article .article-container .author-info .social-media-icons .social-icon:hover {
+  background-color: white;
+}
+
+.main-article .article-container .author-info .social-media-icons .gen-icon {
+  margin-top: 6px;
+  font-size: 25px;
+  color: black;
+}
+
+.main-article .article-container .author-info .social-media-icons .gen-icon:hover {
+  color: #f7f7f7;
+}
+
+.main-article .article-container .article-body {
+  padding-top: 30px;
+}
+
+.main-article .article-container .article-body p{ 
+  font-size: 20px;
+  line-height: 30px;
+  color: #333;
+  padding-bottom: 20px;
+}
+
+.main-article .article-container .article-body h2 {
+  font-size: 20px;
+  font-weight: bold; 
+  color: #333;
+  padding-bottom: 20px; 
+}
+
+.theory-section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.theory-section .theory-header {
+  grid-column: 1/-1;
+  grid-gap: 10px;
+}
+
+.theory-section .theory-header h1 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.theory-section .theory-header p {
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+
+.theory-section .theory-box {
+  height: 300px;
+}
+
+.theory-section .theory-box p{
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  padding-top: 5px;
+}
+
+.theory-section .theory-box p span{
+  font-weight: bold;
+}
+
+.theory-section .theory-box .theory-img {
+  position: relative;
+  width: 200px;
+  height: 140px;
+  overflow: hidden;
+} 
+
+.theory-section .theory-box .theory-img img {
+  position: absolute;
+  width: 800px;
+}
+
+.theory-section .theory-box .theory-img .img-2 {
+  left: -200px;
+}
+
+.theory-section .theory-box .theory-img .img-3 {
+  left: -400px;
+}
+
+.theory-section .theory-box .theory-img .img-4 {
+  left: -600px;
+}
+
+.theory-section .theory-box .theory-img .img-5 {
+  top: -235px;
+}
+
+.theory-section .theory-box .theory-img .img-6 {
+  top: -235px;
+  left: -200px;
+}
+
+.theory-section .theory-box .theory-img .img-7 {
+  top: -235px;
+  left: -400px;
+}
+
+.theory-section .theory-box .theory-img .img-8 {
+  top:-235px;
+  right:0
+}
+
