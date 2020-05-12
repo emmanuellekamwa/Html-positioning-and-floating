@@ -1,7 +1,7 @@
 /* Reset default styling */
 
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -18,13 +18,13 @@ body {
 
 .main-container {
   max-width: 960px;
-  margin:auto;
+  margin: auto;
   padding-bottom: 50px;
 }
 
 .article-container {
   max-width: 650px;
-  margin: auto;    
+  margin: auto;
 }
 
 .pb-50 {
@@ -34,12 +34,16 @@ body {
 /* Header Section */
 
 .header .navbar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
   display: flex;
-  height:50px;
-  border : 1px solid #E2E2E2;
+  height: 50px;
+  z-index: 1;
+  border: 1px solid #e2e2e2;
 }
 
-.navbar .left-icons{
+.navbar .left-icons {
   flex: 1;
 }
 
@@ -53,7 +57,7 @@ body {
 }
 
 .left-icons .header-icon:hover {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .left-icons .header-link {
@@ -61,10 +65,10 @@ body {
   color: black;
   font-size: 14.25px;
   font-weight: 700;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
-.navbar .center-logo{
+.navbar .center-logo {
   text-align: center;
   padding-top: 10px;
   flex: 2;
@@ -74,7 +78,7 @@ body {
   width: 15em;
 }
 
-.navbar .right-buttons{
+.navbar .right-buttons {
   text-align: right;
   margin-right: 20px;
   flex: 1;
@@ -95,18 +99,24 @@ body {
   background-color: #326891;
 }
 
+/* Hero Section */
+
+.hero-section {
+  padding-top: 50px;
+}
+
 .hero-section h1 {
   font-size: 40px;
   font-weight: 700;
   max-width: 700px;
-  padding: 45px 0px 20px 160px;
+  padding: 45px 0 20px 160px;
 }
 
 .hero-section figure img {
-  width:100%;
+  width: 100%;
 }
 
-.hero-section figure figcaption{
+.hero-section figure figcaption {
   font-size: 15px;
   color: #666;
   max-width: 750px;
@@ -114,9 +124,29 @@ body {
 
 /* Article Section */
 
+.main-heading a {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  padding: 15px 0;
+}
+
+.main-heading a:hover {
+  text-decoration: underline;
+}
+
+.main-article .article-body h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 20px;
+}
+
 .main-article .author-info .author-name-date {
   width: 50%;
-  float:left;
+  float: left;
 }
 
 .main-article .author-info .author-name-date h2 {
@@ -124,22 +154,19 @@ body {
   font-size: 15px;
 }
 
-.main-article .author-info .author-name-date h2 a{
+.main-article .author-info .author-name-date h2 a {
   color: #333;
 }
 
 .main-article .author-info .author-name-date span {
   display: inline-block;
   font-size: 13px;
-  padding: 25px 0px;
+  padding: 25px 0;
 }
 
 .main-article .author-info .social-media-icons {
   width: 50%;
   float: right;
-}
-
-.main-article .author-info .social-media-icons {
   display: flex;
   padding-top: 30px;
   justify-content: flex-end;
@@ -148,11 +175,11 @@ body {
 .main-article .author-info .social-media-icons .social-icon {
   font-size: 17px;
   margin-right: 15px;
-  padding :6px;
+  padding: 6px;
   color: black;
-  border: solid 1px #F7F7F7;
+  border: solid 1px #f7f7f7;
   border-radius: 50%;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .main-article .author-info .social-media-icons .social-icon:hover {
@@ -186,8 +213,8 @@ body {
 
 .main-article .author-info .social-media-icons .comments-icon .comment-icon-text {
   position: absolute;
-  left:4px;
-  top:6px;
+  left: 4px;
+  top: 6px;
   font-size: 10px;
 }
 
@@ -195,18 +222,11 @@ body {
   padding-top: 30px;
 }
 
-.main-article .article-body p { 
+.main-article .article-body p {
   font-size: 20px;
   line-height: 30px;
   color: #333;
   padding-bottom: 20px;
-}
-
-.main-article .article-body h2 {
-  font-size: 20px;
-  font-weight: bold; 
-  color: #333;
-  padding-bottom: 20px; 
 }
 
 .main-article .article-body figure {
@@ -218,12 +238,12 @@ body {
 }
 
 .main-article .article-body figure img {
-  width:100%;
+  width: 100%;
   margin-top: 20px;
 }
 
 .main-article .article-body figure figcaption {
-  max-width:600px;
+  max-width: 600px;
   font-size: 15px;
   color: #666;
 }
@@ -257,7 +277,7 @@ body {
   text-transform: uppercase;
   color: white;
   font-size: 11px;
-  padding: 10px 0px;
+  padding: 10px 0;
   background-color: #567b95;
   border: none;
   border-radius: 5px;
@@ -277,11 +297,11 @@ body {
 .main-article .article-footer .social-media-icons .social-icon {
   font-size: 17px;
   margin-right: 15px;
-  padding :6px;
+  padding: 6px;
   color: black;
-  border: solid 1px #F7F7F7;
+  border: solid 1px #f7f7f7;
   border-radius: 50%;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .main-article .article-footer .social-media-icons .social-icon:hover {
@@ -304,8 +324,8 @@ body {
 
 .main-article .article-footer .social-media-icons .comments-icon .comment-icon-text {
   position: absolute;
-  left:4px;
-  top:6px;
+  left: 4px;
+  top: 6px;
   font-size: 10px;
 }
 
@@ -333,21 +353,21 @@ body {
 .theory-section .theory-header p {
   color: #666;
   font-size: 14px;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .theory-section .theory-box {
   height: 300px;
 }
 
-.theory-section .theory-box p{
+.theory-section .theory-box p {
   font-size: 14px;
   line-height: 17px;
   color: black;
   padding-top: 5px;
 }
 
-.theory-section .theory-box p span{
+.theory-section .theory-box p span {
   font-weight: bold;
 }
 
@@ -356,7 +376,7 @@ body {
   width: 200px;
   height: 140px;
   overflow: hidden;
-} 
+}
 
 .theory-section .theory-box .theory-img img {
   position: absolute;
@@ -390,8 +410,8 @@ body {
 }
 
 .theory-section .theory-box .theory-img .img-8 {
-  top:-235px;
-  right:0
+  top: -235px;
+  right: 0;
 }
 
 .theory-footer::before {
@@ -412,12 +432,12 @@ body {
 
 .related-container {
   width: 96%;
-  margin:auto;
+  margin: auto;
 }
 
 .related-article {
-  float:left;
-  width:70%;
+  float: left;
+  width: 70%;
   padding-bottom: 50px;
 }
 
@@ -435,22 +455,10 @@ body {
   display: inline-block;
   height: 1px;
   background-color: #000;
-} 
-
-.main-heading a {
-  display: inline-block;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000;
-  padding: 15px 0px;
 }
 
-.main-heading a:hover {
-  text-decoration: underline;
-}
-
-.related-grid, .editor-grid {
+.related-grid,
+.editor-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
@@ -458,7 +466,7 @@ body {
 
 .related-item {
   width: 200px;
-  padding-bottom: 20px;;
+  padding-bottom: 20px;
 }
 
 .related-item figure img {
@@ -469,14 +477,14 @@ body {
   width: 129%;
   font-size: 10px;
   text-align: right;
-  padding: 3px 0px;
+  padding: 3px 0;
   color: #333;
 }
 
 .related-item h3 {
   font-size: 14px;
   padding-top: 3px;
-  width:120%;
+  width: 120%;
   color: #333;
   cursor: pointer;
 }
@@ -487,7 +495,7 @@ body {
 
 .related-item span {
   font-size: 10px;
-  padding: 3px 0px;
+  padding: 3px 0;
   color: #333;
 }
 
@@ -523,7 +531,7 @@ body {
   color: #333;
   font-size: 19px;
   line-height: 23px;
-  padding: 10px 20px 10px 0px;
+  padding: 10px 20px 10px 0;
 }
 
 .populer-item a:hover {
@@ -531,6 +539,9 @@ body {
 }
 
 /* footer styling */
+.footer {
+  margin-bottom: 55px;
+}
 
 .footer-container {
   width: 96%;
@@ -540,14 +551,14 @@ body {
 }
 
 .footer-container .footer-logo img {
-  width:13em;
+  width: 13em;
 }
 
 .footer-container .home-page-link {
   position: relative;
   font-size: 12px;
   text-decoration: none;
-  left:70%;
+  left: 70%;
   top: -15px;
 }
 
@@ -571,13 +582,13 @@ body {
 
 .footer-grid-item h3 {
   font-size: 14px;
-  padding: 5px 0px;
+  padding: 5px 0;
   text-transform: uppercase;
 }
 
 .footer-grid-item a {
   display: inline-block;
-  padding: 5px 0px;
+  padding: 5px 0;
   font-size: 13px;
   color: black;
   text-decoration: none;
@@ -592,7 +603,9 @@ body {
   padding-left: 10px;
 }
 
-.main-subscrption, .newsletter-subscription, .application-subscription {
+.main-subscrption,
+.newsletter-subscription,
+.application-subscription {
   display: flex;
   flex-direction: column;
   margin-top: 5px;
@@ -621,7 +634,8 @@ body {
   text-decoration: underline;
 }
 
-.newsletter-subscription a , .application-subscription a {
+.newsletter-subscription a,
+.application-subscription a {
   font-size: 11px;
 }
 
@@ -646,3 +660,32 @@ body {
   padding-right: 5px;
 }
 
+.sticky-footer {
+  width: 99vw;
+  height: 55px;
+  border-top: 1px solid black;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.sticky-footer p {
+  margin: auto;
+}
+
+.sticky-footer p:last-child {
+  position: relative;
+  top: 20px;
+  right: 140px;
+  margin: 0;
+}
+
+.sticky-footer a {
+  color: black;
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-size: 14px;
+  text-decoration: none;
+}
