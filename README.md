@@ -12,7 +12,7 @@ The page tries to replicate as much as possible the actual New York Times articl
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/emmanuellekamwa/Html-positioning-and-floating/364b69874d7293afa6a1b9521e68eab6704000a5/index.html)
+[Live Demo Link](https://raw.githack.com/emmanuellekamwa/Html-positioning-and-floating/feature-html/index.html)
 
 ## Authors
 

@@ -515,7 +515,7 @@ body {
 /* related article section */
 
 .related-container {
-  width: 96%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -603,7 +603,7 @@ body {
 }
 
 .footer-container {
-  width: 96%;
+  max-width: 1200px;
   border-top: 1px solid lightgray;
   margin: auto;
   padding-top: 20px;
