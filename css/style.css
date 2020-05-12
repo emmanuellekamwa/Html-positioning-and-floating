@@ -133,8 +133,52 @@ body {
   padding: 15px 0;
 }
 
+.populer-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 19px;
+  line-height: 23px;
+  padding: 10px 20px 10px 0;
+}
+
+.footer-grid-item a {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+}
+
+.newsletter-subscription a,
+.application-subscription a {
+  font-size: 11px;
+}
+
+.footer-links a {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 11px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sticky-footer a {
+  color: black;
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .main-heading a:hover {
   text-decoration: underline;
+}
+
+.main-subscrption h2 {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 0;
 }
 
 .main-article .article-body h2 {
@@ -149,13 +193,48 @@ body {
   float: left;
 }
 
+.main-subscrption h2:hover {
+  text-decoration: underline;
+}
+
 .main-article .author-info .author-name-date h2 {
   color: #333;
   font-size: 15px;
 }
 
+.populer-item a:hover {
+  color: #888;
+}
+
+.footer-grid-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.main-article .article-body .article-version a {
+  color: #666;
+  text-decoration: none;
+}
+
 .main-article .author-info .author-name-date h2 a {
   color: #333;
+}
+
+.related-item span {
+  font-size: 10px;
+  padding: 3px 0;
+  color: #333;
+}
+
+.theory-section .theory-box p span {
+  font-weight: bold;
+}
+
+.main-article .article-body figure figcaption span {
+  color: #888;
 }
 
 .main-article .author-info .author-name-date span {
@@ -173,6 +252,16 @@ body {
 }
 
 .main-article .author-info .social-media-icons .social-icon {
+  font-size: 17px;
+  margin-right: 15px;
+  padding: 6px;
+  color: black;
+  border: solid 1px #f7f7f7;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}
+
+.main-article .article-footer .social-media-icons .social-icon {
   font-size: 17px;
   margin-right: 15px;
   padding: 6px;
@@ -222,6 +311,10 @@ body {
   padding-top: 30px;
 }
 
+.sticky-footer p {
+  margin: auto;
+}
+
 .main-article .article-body p {
   font-size: 20px;
   line-height: 30px;
@@ -237,9 +330,25 @@ body {
   margin-top: 20px;
 }
 
+.related-item figure img {
+  width: 260px;
+}
+
+.footer-container .footer-logo img {
+  width: 13em;
+}
+
 .main-article .article-body figure img {
   width: 100%;
   margin-top: 20px;
+}
+
+.related-item figure figcaption {
+  width: 129%;
+  font-size: 10px;
+  text-align: right;
+  padding: 3px 0;
+  color: #333;
 }
 
 .main-article .article-body figure figcaption {
@@ -248,19 +357,10 @@ body {
   color: #666;
 }
 
-.main-article .article-body figure figcaption span {
-  color: #888;
-}
-
 .main-article .article-body .article-version {
   color: #666;
   font-size: 12px;
   line-height: 16px;
-}
-
-.main-article .article-body .article-version a {
-  color: #666;
-  text-decoration: none;
 }
 
 .main-article .article-body .article-version a:hover {
@@ -294,16 +394,6 @@ body {
   justify-content: flex-end;
 }
 
-.main-article .article-footer .social-media-icons .social-icon {
-  font-size: 17px;
-  margin-right: 15px;
-  padding: 6px;
-  color: black;
-  border: solid 1px #f7f7f7;
-  border-radius: 50%;
-  background-color: #f7f7f7;
-}
-
 .main-article .article-footer .social-media-icons .social-icon:hover {
   background-color: white;
 }
@@ -328,8 +418,6 @@ body {
   top: 6px;
   font-size: 10px;
 }
-
-/* social-icon */
 
 /* Theory Section */
 
@@ -365,10 +453,6 @@ body {
   line-height: 17px;
   color: black;
   padding-top: 5px;
-}
-
-.theory-section .theory-box p span {
-  font-weight: bold;
 }
 
 .theory-section .theory-box .theory-img {
@@ -469,18 +553,6 @@ body {
   padding-bottom: 20px;
 }
 
-.related-item figure img {
-  width: 260px;
-}
-
-.related-item figure figcaption {
-  width: 129%;
-  font-size: 10px;
-  text-align: right;
-  padding: 3px 0;
-  color: #333;
-}
-
 .related-item h3 {
   font-size: 14px;
   padding-top: 3px;
@@ -489,14 +561,14 @@ body {
   cursor: pointer;
 }
 
-.related-item h3:hover {
-  color: #888;
+.footer-grid-item h3 {
+  font-size: 14px;
+  padding: 5px 0;
+  text-transform: uppercase;
 }
 
-.related-item span {
-  font-size: 10px;
-  padding: 3px 0;
-  color: #333;
+.related-item h3:hover {
+  color: #888;
 }
 
 .most-populer {
@@ -525,19 +597,6 @@ body {
   background-color: #666;
 }
 
-.populer-item a {
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  font-size: 19px;
-  line-height: 23px;
-  padding: 10px 20px 10px 0;
-}
-
-.populer-item a:hover {
-  color: #888;
-}
-
 /* footer styling */
 .footer {
   margin-bottom: 55px;
@@ -548,10 +607,6 @@ body {
   border-top: 1px solid lightgray;
   margin: auto;
   padding-top: 20px;
-}
-
-.footer-container .footer-logo img {
-  width: 13em;
 }
 
 .footer-container .home-page-link {
@@ -580,24 +635,6 @@ body {
   flex-direction: column;
 }
 
-.footer-grid-item h3 {
-  font-size: 14px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.footer-grid-item a {
-  display: inline-block;
-  padding: 5px 0;
-  font-size: 13px;
-  color: black;
-  text-decoration: none;
-}
-
-.footer-grid-item a:hover {
-  text-decoration: underline;
-}
-
 .footer-subscribe {
   border-left: 1px solid lightgrey;
   padding-left: 10px;
@@ -624,36 +661,9 @@ body {
   background-color: lightgrey;
 }
 
-.main-subscrption h2 {
-  cursor: pointer;
-  font-size: 16px;
-  padding: 5px 0;
-}
-
-.main-subscrption h2:hover {
-  text-decoration: underline;
-}
-
-.newsletter-subscription a,
-.application-subscription a {
-  font-size: 11px;
-}
-
 .footer-links {
   margin: auto;
   padding: 8px 8% 25px 8%;
-}
-
-.footer-links a {
-  display: inline-block;
-  padding-right: 10px;
-  font-size: 11px;
-  color: #333;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
 }
 
 .copyright-text {
@@ -671,21 +681,9 @@ body {
   background-color: white;
 }
 
-.sticky-footer p {
-  margin: auto;
-}
-
 .sticky-footer p:last-child {
   position: relative;
   top: 20px;
   right: 140px;
   margin: 0;
-}
-
-.sticky-footer a {
-  color: black;
-  text-transform: uppercase;
-  margin-right: 30px;
-  font-size: 14px;
-  text-decoration: none;
 }
