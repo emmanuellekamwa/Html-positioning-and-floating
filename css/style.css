@@ -328,6 +328,8 @@ body {
 
 .main-article .article-body figure iframe {
   margin-top: 20px;
+  width: 100%;
+  height: 315px;
 }
 
 .related-item figure img {
